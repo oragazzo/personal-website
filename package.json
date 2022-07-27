@@ -9,9 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@svgr/webpack": "^6.3.1",
+    "bootstrap": "^4.6.0",
+    "install": "^0.13.0",
     "next": "12.2.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-bootstrap": "^2.4.0",
+    "react-dom": "18.2.0",
+    "reactstrap": "^9.1.2"
   },
   "devDependencies": {
     "@types/node": "18.0.6",
@@ -19,6 +24,7 @@
     "@types/react-dom": "18.0.6",
     "eslint": "8.20.0",
     "eslint-config-next": "12.2.2",
+    "sass": "^1.53.0",
     "typescript": "4.7.4"
   }
 }

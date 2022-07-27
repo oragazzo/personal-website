@@ -1,0 +1,110 @@
+@import "variables.module.scss";
+
+.topBar {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+
+  & .topBarContent {
+    font-family: "Gotham";
+    font-style: normal;
+
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin: 50px;
+
+    & .home {
+      font-size: 25px;
+      margin: 0 85px;
+    }
+
+    & .item {
+      font-size: 20px;
+      margin: 0 85px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+  }
+}
+
+.main {
+  min-height: 100vh;
+  padding: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Gotham";
+  color: $font-color;
+
+  background: linear-gradient(308.81deg, #222124 0%, #0f0f0f 54.47%, #050505 94.47%);
+
+  & .container {
+    width: 100%;
+    padding-right: 15px;
+  }
+
+  & .title {
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(60px, 4vw, 75px);
+    line-height: 65px;
+    /* or 88% */
+    letter-spacing: 0.05em;
+
+    padding-bottom: 60px;
+  }
+
+  & .info {
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: 100;
+    font-size: 17px;
+    line-height: 25px;
+    /* or 176% */
+    letter-spacing: 0.05em;
+    padding-bottom: 20px;
+
+    color: #ffffff;
+  }
+
+  & .svgContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .mainSvgContent {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+    }
+    & .sideLeftSvgContent {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+    }
+  }
+}
+
+.bottomContainer {
+  position: fixed;
+  left: 55vh;
+  bottom: 0;
+}
