@@ -4,7 +4,6 @@ import styles from '../styles/Home.module.scss'
 
 import Circle from '../assets/main_circle.svg'
 import SideCircle from '../assets/side_circle.svg'
-import BottomCircle from '../assets/bottom_circle.svg'
 
 // reactstrap components
 import { Row, Col } from 'reactstrap'
@@ -18,7 +17,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/eye.ico" />
       </Head>
 
-      <div className={styles.topBar}>
+      <div className={[styles.topBar, 'd-none d-lg-block'].join(' ')}>
         <div className={styles.topBarContent}>
           <p className={styles.item}>
             <a href="/api/hello">Item 1</a>
@@ -41,36 +40,41 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <div className={styles.container}>
           <Row>
-            <Col xl="7" className="d-none d-lg-block">
+            <Col xl="7">
               <div className={styles.svgContainer}>
-                <SideCircle className={styles.sideLeftSvgContent} />
+                <SideCircle
+                  className={[
+                    styles.sideLeftSvgContent,
+                    'd-none d-lg-block',
+                  ].join(' ')}
+                />
                 <Circle className={styles.mainSvgContent} />
               </div>
             </Col>
-            <Col xl="4" md="12" className="p-5">
-              <h1 className={styles.title}>My mother told me</h1>
+            <Col md="12" xl="4" className="p-5">
+              <h1 className={styles.title}>Find the others.</h1>
               <p className={styles.info}>
-                The song My mother told me, also known as Þat mælti mín móðir in
-                its ninth-century old Norse form, is probably most recognizable
-                through the popular show Vikings. However, as an archaeologist,
-                this song ignites something inside of this author’s never-ending
-                thought experiments on this population which existed during the
-                Iron Age.
+                For every time you say club passwords like “Have a nice day” and
+                “Weather’s awful today, eh?”, you yearn inside to say forbidden
+                things like “Tell me something that makes you cry” or “What do
+                you think deja vu is for?”. Face it, you even want to talk to
+                that girl in the elevator. But what if that girl in the elevator
+                (and the balding man who walks past your cubicle at work) are
+                thinking the same thing?
               </p>
               <p className={styles.info}>
-                The Vikings were likely faced with several economic, political,
-                and social pressures in Norway during the Viking Age, and
-                started to venture abroad for various reasons.
+                Who knows what you might learn from taking a chance on
+                conversation with a stranger? Everyone carries a piece of the
+                puzzle. Nobody comes into your life by mere coincidence. Trust
+                your instincts. Do the unexpected. Find the others…
               </p>
             </Col>
           </Row>
         </div>
       </main>
-      <div className={styles.bottomContainer}>
-        <div className="d-none d-lg-block">
-          <BottomCircle className={styles.sideBottomSvgContent} />
-        </div>
-      </div>
+      <div
+        className={[styles.bottomContainer, 'd-none d-lg-block'].join(' ')}
+      ></div>
     </div>
   )
 }
