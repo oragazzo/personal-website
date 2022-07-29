@@ -14,3 +14,53 @@ a {
 * {
   box-sizing: border-box;
 }
+
+// External fonts
+@font-face {
+  font-family: 'BL Melody';
+  src: url('/fonts/BLMelody-ExtraLight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BL Melody';
+  src: url('/fonts/BLMelody-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BL Melody';
+  src: url('/fonts/BLMelody-Medium.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BL Melody';
+  src: url('/fonts/BLMelody-Regular.otf') format('opentype');
+  font-weight: regular;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BL Melody';
+  src: url('/fonts/BLMelody-Book.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BL Melody';
+  src: url('/fonts/BLMelody-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BL Melody';
+  src: url('/fonts/BLMelody-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}

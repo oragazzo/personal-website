@@ -2,7 +2,10 @@ $primary-color: #272727;
 
 $font-color: #fff;
 
+$font-family: "BL Melody";
+
 :export {
   primaryColor: $primary-color;
   fontColor: $font-color;
+  fontFamily: $font-family;
 }

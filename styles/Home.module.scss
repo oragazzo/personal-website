@@ -6,10 +6,9 @@
   z-index: 1;
 
   & .topBarContent {
-    font-family: "Gotham";
-    font-style: normal;
+    font-family: $font-family;
 
-    font-weight: 700;
+    font-weight: 600;
     line-height: 30px;
     letter-spacing: 0.05em;
 
@@ -47,7 +46,7 @@
   justify-content: center;
   align-items: center;
 
-  font-family: "Gotham";
+  font-family: $font-family;
   color: $font-color;
 
   background: linear-gradient(308.81deg, #222124 0%, #0f0f0f 54.47%, #050505 94.47%);
@@ -58,9 +57,8 @@
   }
 
   & .title {
-    font-family: "Gotham";
-    font-style: normal;
-    font-weight: 500;
+    font-family: $font-family;
+    font-weight: 700;
     font-size: clamp(60px, 4vw, 7vw);
     line-height: clamp(65px, 4vw, 6vh);
     /* or 88% */
@@ -70,9 +68,8 @@
   }
 
   & .info {
-    font-family: "Gotham";
-    font-style: normal;
-    font-weight: 100;
+    font-family: $font-family;
+    font-weight: 200;
     font-size: clamp(20px, 4vw, 1vw);
     line-height: clamp(25px, 4vw, 2.5vh);
     /* or 176% */
