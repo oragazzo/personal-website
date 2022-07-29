@@ -70,10 +70,10 @@
   & .info {
     font-family: $font-family;
     font-weight: 200;
-    font-size: clamp(20px, 4vw, 1vw);
+    font-size: clamp(15px, 4vw, 1vw);
     line-height: clamp(25px, 4vw, 2.5vh);
     /* or 176% */
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     padding-bottom: 20px;
 
     color: #ffffff;
