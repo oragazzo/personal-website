@@ -1,19 +1,7 @@
-<svg
-  width="410"
-  height="675"
-  viewBox="0 0 410 675"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
+<svg fill="none" xmlns="http://www.w3.org/2000/svg">
     <g filter="url(#filter0_d_5_77)">
     <circle cy="265" r="120" fill="url(#paint0_linear_5_77)" />
-    <circle
-      cy="265"
-      r="119.75"
-      stroke="black"
-      stroke-opacity="0.3"
-      stroke-width="0.5"
-    />
+    <circle stroke="black" stroke-opacity="0.3" stroke-width="0.5" />
     </g>
     <defs>
     <filter
