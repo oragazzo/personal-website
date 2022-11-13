@@ -4,6 +4,8 @@ export default function Document() {
   return (
     <Html>
       <Head>
+        <meta name="theme-color" content="#050505" />
+
         <link
           href="https://cdn.oragazzo.com/BL/BLMelody-Bold.otf"
           rel="stylesheet"

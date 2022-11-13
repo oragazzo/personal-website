@@ -4,8 +4,14 @@ import Link from 'next/link'
 
 import styles from '../styles/Home.module.scss'
 
-import Circle from '../assets/main_circle.svg'
-import SideCircle from '../assets/side_circle.svg'
+import Circle from '../assets/circles/main_circle.svg'
+import SideCircle from '../assets/circles/side_circle.svg'
+import BottomCircle from '../assets/circles/bottom_circle.svg'
+
+import BehanceIcon from '../assets/social/icon_behance.svg'
+import InstagramIcon from '../assets/social/icon_instagram.svg'
+import RedditIcon from '../assets/social/icon_reddit.svg'
+import TwitterIcon from '../assets/social/icon_twitter.svg'
 
 // reactstrap components
 import { Row, Col } from 'reactstrap'
@@ -22,19 +28,19 @@ const Home: NextPage = () => {
       <div className={[styles.topBar, 'd-none d-lg-block'].join(' ')}>
         <div className={styles.topBarContent}>
           <p className={styles.item}>
-            <Link href="/api/hello">Item 1</Link>
+            <Link href="/api/hello">Skills</Link>
           </p>
           <p className={styles.item}>
-            <Link href="/api/hello">Item 2</Link>
+            <Link href="/api/hello">About</Link>
           </p>
           <p className={styles.home}>
             <Link href="/">Home</Link>
           </p>
           <p className={styles.item}>
-            <Link href="/api/hello">Item 3</Link>
+            <Link href="/api/hello">Content</Link>
           </p>
           <p className={styles.item}>
-            <Link href="/api/hello">Item 4</Link>
+            <Link href="/api/hello">Listening</Link>
           </p>
         </div>
       </div>
@@ -73,10 +79,36 @@ const Home: NextPage = () => {
             </Col>
           </Row>
         </div>
+
+        <div className={styles.footerWrapper}>
+          <div className={[styles.socialContainer].join(' ')}>
+            <div className={styles.socialGroup}>
+              <div className={styles.socialMedia}>
+                <InstagramIcon className={styles.socialBadge} />
+                <a className={styles.socialText}>@oragazzo</a>
+              </div>
+              <div className={styles.socialMedia}>
+                <TwitterIcon className={styles.socialBadge} />
+                <a className={styles.socialText}>@sRagazz0</a>
+              </div>
+            </div>
+
+            <div className={styles.socialGroup}>
+              <div className={styles.socialMedia}>
+                <RedditIcon className={styles.socialBadge} />
+                <a className={styles.socialText}>@xRagazz0</a>
+              </div>
+              <div className={styles.socialMedia}>
+                <BehanceIcon className={styles.socialBadge} />
+                <a className={styles.socialText}>/oragazzo</a>
+              </div>
+            </div>
+          </div>
+          <BottomCircle
+            className={[styles.bgCircleSvg, 'd-none d-lg-block'].join(' ')}
+          />
+        </div>
       </main>
-      <div
-        className={[styles.bottomContainer, 'd-none d-lg-block'].join(' ')}
-      ></div>
     </div>
   )
 }

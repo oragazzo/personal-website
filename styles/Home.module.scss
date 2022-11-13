@@ -63,8 +63,8 @@
     line-height: clamp(65px, 4vw, 6vh);
     /* or 88% */
     letter-spacing: 0.05em;
-
     padding-bottom: 60px;
+    z-index: 5;
   }
 
   & .info {
@@ -75,7 +75,7 @@
     /* or 176% */
     letter-spacing: 0.06em;
     padding-bottom: 20px;
-
+    z-index: 5;
     color: #ffffff;
   }
 
@@ -113,15 +113,71 @@
   }
 }
 
-.bottomContainer {
-  background: url("../assets/bottom_circle.svg");
-
-  background-position: center;
-
-  position: fixed;
-  width: 100%;
-  height: 300px;
-  background-repeat: no-repeat;
-  right: 0px;
+.footerWrapper {
+  position: absolute;
   bottom: 0px;
+
+  width: 100%;
+  height: 80px;
+
+  z-index: 5;
+
+  .socialContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+
+    & .socialGroup {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+      & .socialMedia {
+        margin: 25px 60px;
+        display: flex;
+        align-items: center;
+
+        & .socialBadge {
+          margin-right: 10px;
+        }
+        & .socialText {
+          font-family: $font-family;
+          font-size: clamp(15px, 4vw, 1vw);
+
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 24px;
+
+          text-decoration: none;
+          cursor: pointer;
+
+          color: #ffffff;
+        }
+      }
+    }
+
+    @media (max-width: 1200px) {
+      & .socialGroup {
+        flex-direction: column;
+
+        & .socialMedia {
+          margin: 5px 30px;
+        }
+      }
+    }
+  }
+
+  .bgCircleSvg {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    right: 0px;
+    bottom: 300px;
+  }
 }
