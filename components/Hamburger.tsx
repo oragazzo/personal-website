@@ -28,20 +28,36 @@ export default function Hamburguer() {
             <TopBarContent />
           </nav>
           <div className={styles.social}>
-            <a href="https://www.instagram.com/oragazzo" target="_blank">
+            <a
+              href="https://www.instagram.com/oragazzo"
+              target="_blank"
+              rel="noreferrer"
+            >
               <InstagramIcon className={styles.socialBadge} />
             </a>
 
-            <a href="https://twitter.com/sRagazz0" target="_blank">
+            <a
+              href="https://twitter.com/sRagazz0"
+              target="_blank"
+              rel="noreferrer"
+            >
               <TwitterIcon className={styles.socialBadge} />
             </a>
 
-            <a href="https://www.reddit.com/user/xRagazz0" target="_blank">
+            <a
+              href="https://www.reddit.com/user/xRagazz0"
+              target="_blank"
+              rel="noreferrer"
+            >
               <RedditIcon className={styles.socialBadge} />
               <i className="fab fa-github"></i>
             </a>
 
-            <a href="https://www.behance.net/oragazzo" target="_blank">
+            <a
+              href="https://www.behance.net/oragazzo"
+              target="_blank"
+              rel="noreferrer"
+            >
               <BehanceIcon className={styles.socialBadge} />
             </a>
           </div>

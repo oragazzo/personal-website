@@ -18,6 +18,7 @@ export default function Footer() {
             className={styles.socialMedia}
             href="https://www.instagram.com/oragazzo"
             target="_blank"
+            rel="noreferrer"
           >
             <InstagramIcon className={styles.socialBadge} />
             <p className={styles.socialText}>@oragazzo</p>
@@ -26,6 +27,7 @@ export default function Footer() {
             className={styles.socialMedia}
             href="https://twitter.com/sRagazz0"
             target="_blank"
+            rel="noreferrer"
           >
             <TwitterIcon className={styles.socialBadge} />
             <p className={styles.socialText}>@sRagazz0</p>
@@ -37,6 +39,7 @@ export default function Footer() {
             className={styles.socialMedia}
             href="https://www.reddit.com/user/xRagazz0"
             target="_blank"
+            rel="noreferrer"
           >
             <RedditIcon className={styles.socialBadge} />
             <p className={styles.socialText}>@xRagazz0</p>
@@ -45,6 +48,7 @@ export default function Footer() {
             className={styles.socialMedia}
             href="https://www.behance.net/oragazzo"
             target="_blank"
+            rel="noreferrer"
           >
             <BehanceIcon className={styles.socialBadge} />
             <p className={styles.socialText}>/oragazzo</p>
