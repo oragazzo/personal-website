@@ -1,0 +1,48 @@
+@import "variables.module.scss";
+
+.topBarContent {
+    font-family: $font-family;
+
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin: 3vh 0;
+
+    & .home {
+        font-size: clamp(20px, 4vw, 1.2vw);
+        margin: 0 5vw;
+    }
+
+    & .item {
+        font-size: clamp(15px, 4vw, 0.9vw);
+        margin: 0 5vw;
+    }
+
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .topBarContent {
+        flex-direction: column;
+        align-items: center;
+
+        & .home {
+            font-size: clamp(20px, 4vw, 1.2vw);
+            margin: 10px 0;
+        }
+        & .item {
+            font-size: clamp(20px, 4vw, 1.2vw);
+            margin: 10px 0;
+        }
+    }
+}
