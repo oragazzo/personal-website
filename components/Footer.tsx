@@ -55,8 +55,6 @@ export default function Footer() {
           </a>
         </div>
       </div>
-
-      <BottomCircle className={[styles.bgCircleSvg].join(' ')} />
     </div>
   )
 }
