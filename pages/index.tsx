@@ -28,7 +28,7 @@ const Home: NextPage = () => {
         <TopBarContent />
       </div>
 
-      <div className={[styles.topBar, 'd-block d-lg-none p-5 '].join(' ')}>
+      <div className={[styles.topBar, 'd-block d-lg-none p-5'].join(' ')}>
         <div className={styles.topBarResponsive}>
           <Hamburguer />
         </div>

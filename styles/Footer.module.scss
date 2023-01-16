@@ -2,7 +2,8 @@
 
 .footerWrapper {
     position: absolute;
-    bottom: 0px;
+
+    justify-content: center;
 
     width: 100%;
 
@@ -16,13 +17,17 @@
         justify-content: space-around;
         align-items: center;
 
+        width: 90%;
+
         & .socialGroup {
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
 
+            margin: 0 70px;
+
             & .socialMedia {
-                margin: 25px 60px;
+                margin: 25px 50px;
                 display: flex;
                 align-items: center;
 
