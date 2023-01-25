@@ -8,6 +8,8 @@ import InstagramIcon from '../assets/social/icon_instagram.svg'
 import RedditIcon from '../assets/social/icon_reddit.svg'
 import TwitterIcon from '../assets/social/icon_twitter.svg'
 
+import Link from 'next/link'
+
 import { Row, Col } from 'reactstrap'
 
 export default function Footer() {
@@ -15,7 +17,7 @@ export default function Footer() {
     <div className={[styles.footerWrapper, 'd-none d-lg-flex'].join(' ')}>
       <div className={[styles.socialContainer].join(' ')}>
         <div className={styles.socialGroup}>
-          <a
+          <Link
             className={styles.socialMedia}
             href="https://www.instagram.com/oragazzo"
             target="_blank"
@@ -23,8 +25,8 @@ export default function Footer() {
           >
             <InstagramIcon className={styles.socialBadge} />
             <p className={styles.socialText}>@oragazzo</p>
-          </a>
-          <a
+          </Link>
+          <Link
             className={styles.socialMedia}
             href="https://twitter.com/sRagazz0"
             target="_blank"
@@ -32,7 +34,7 @@ export default function Footer() {
           >
             <TwitterIcon className={styles.socialBadge} />
             <p className={styles.socialText}>@sRagazz0</p>
-          </a>
+          </Link>
         </div>
 
         <Col>
@@ -40,7 +42,7 @@ export default function Footer() {
         </Col>
 
         <Col className={styles.socialGroup}>
-          <a
+          <Link
             className={styles.socialMedia}
             href="https://www.reddit.com/user/xRagazz0"
             target="_blank"
@@ -48,8 +50,8 @@ export default function Footer() {
           >
             <RedditIcon className={styles.socialBadge} />
             <p className={styles.socialText}>@xRagazz0</p>
-          </a>
-          <a
+          </Link>
+          <Link
             className={styles.socialMedia}
             href="https://www.behance.net/oragazzo"
             target="_blank"
@@ -57,7 +59,7 @@ export default function Footer() {
           >
             <BehanceIcon className={styles.socialBadge} />
             <p className={styles.socialText}>/oragazzo</p>
-          </a>
+          </Link>
         </Col>
       </div>
     </div>

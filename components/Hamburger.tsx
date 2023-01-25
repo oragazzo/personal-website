@@ -9,6 +9,8 @@ import InstagramIcon from '../assets/social/icon_instagram.svg'
 import RedditIcon from '../assets/social/icon_reddit.svg'
 import TwitterIcon from '../assets/social/icon_twitter.svg'
 
+import Link from 'next/link'
+
 export default function Hamburguer() {
   const [open, setOpen] = useState(false)
 
@@ -28,38 +30,38 @@ export default function Hamburguer() {
             <TopBarContent />
           </nav>
           <div className={styles.social}>
-            <a
+            <Link
               href="https://www.instagram.com/oragazzo"
               target="_blank"
               rel="noreferrer"
             >
               <InstagramIcon className={styles.socialBadge} />
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="https://twitter.com/sRagazz0"
               target="_blank"
               rel="noreferrer"
             >
               <TwitterIcon className={styles.socialBadge} />
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="https://www.reddit.com/user/xRagazz0"
               target="_blank"
               rel="noreferrer"
             >
               <RedditIcon className={styles.socialBadge} />
               <i className="fab fa-github"></i>
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="https://www.behance.net/oragazzo"
               target="_blank"
               rel="noreferrer"
             >
               <BehanceIcon className={styles.socialBadge} />
-            </a>
+            </Link>
           </div>
         </div>
       )}

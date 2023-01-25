@@ -68,9 +68,9 @@ const Home: NextPage = () => {
             </Col>
           </Row>
         </div>
-      </main>
 
-      <Footer />
+        <Footer />
+      </main>
     </Div100vh>
   )
 }
