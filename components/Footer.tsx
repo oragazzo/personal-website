@@ -1,22 +1,21 @@
-import React from 'react'
+import React from "react";
 
-import styles from '../styles/Footer.module.scss'
+import styles from "../styles/Footer.module.scss";
 
-import SpotifyBadge from './SpotifyBadge'
-import BehanceIcon from '../assets/social/icon_behance.svg'
-import InstagramIcon from '../assets/social/icon_instagram.svg'
-import RedditIcon from '../assets/social/icon_reddit.svg'
-import TwitterIcon from '../assets/social/icon_twitter.svg'
+import BehanceIcon from "../assets/social/icon_behance.svg";
+import InstagramIcon from "../assets/social/icon_instagram.svg";
+import RedditIcon from "../assets/social/icon_reddit.svg";
+import TwitterIcon from "../assets/social/icon_twitter.svg";
 
-import Link from 'next/link'
+import Link from "next/link";
 
-import { Row, Col } from 'reactstrap'
+import { Row, Col } from "reactstrap";
 
 export default function Footer() {
   return (
-    <div className={[styles.footerWrapper, 'd-none d-lg-flex'].join(' ')}>
-      <div className={[styles.socialContainer].join(' ')}>
-        <div className={styles.socialGroup}>
+    <div className={[styles.footerWrapper, "d-none d-lg-flex"].join(" ")}>
+      <div className={[styles.socialContainer].join(" ")}>
+        <Col className={styles.socialGroup}>
           <Link
             className={styles.socialMedia}
             href="https://www.instagram.com/oragazzo"
@@ -35,10 +34,6 @@ export default function Footer() {
             <TwitterIcon className={styles.socialBadge} />
             <p className={styles.socialText}>@sRagazz0</p>
           </Link>
-        </div>
-
-        <Col>
-          <SpotifyBadge />
         </Col>
 
         <Col className={styles.socialGroup}>
@@ -63,5 +58,5 @@ export default function Footer() {
         </Col>
       </div>
     </div>
-  )
+  );
 }

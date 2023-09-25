@@ -13,22 +13,18 @@
     .socialContainer {
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
         align-content: center;
         justify-content: space-around;
         align-items: center;
 
-        width: 90%;
-
         & .socialGroup {
             display: flex;
             flex-direction: row;
-            flex-wrap: nowrap;
 
             margin: 0 70px;
 
             & .socialMedia {
-                margin: 25px 50px;
+                margin: 25px 100px;
                 display: flex;
                 align-items: center;
 
