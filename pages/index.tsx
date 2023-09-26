@@ -1,19 +1,18 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
+import type { NextPage } from "next";
+import Head from "next/head";
 
-import Div100vh from 'react-div-100vh'
+import Div100vh from "react-div-100vh";
 
-import Hamburguer from '../components/Hamburger'
-import TopBarContent from '../components/TopBarContent'
-import Footer from '../components/Footer'
+import Hamburguer from "../components/Hamburger";
+import TopBarContent from "../components/TopBarContent";
+import Footer from "../components/Footer";
 
-import styles from '../styles/Home.module.scss'
+import styles from "../styles/Home.module.scss";
 
-import Circle from '../assets/circles/main_circle.svg'
-import SideCircle from '../assets/circles/side_circle.svg'
+import Circle from "../assets/circles/main_circle.svg";
 
 // reactstrap components
-import { Row, Col } from 'reactstrap'
+import { Row, Col } from "reactstrap";
 
 const Home: NextPage = () => {
   return (
@@ -24,11 +23,11 @@ const Home: NextPage = () => {
         <link rel="icon" href="/eye.ico" />
       </Head>
 
-      <div className={[styles.topBar, 'd-none d-lg-block'].join(' ')}>
+      <div className={[styles.topBar, "d-none d-lg-block"].join(" ")}>
         <TopBarContent />
       </div>
 
-      <div className={[styles.topBar, 'd-block d-lg-none p-5'].join(' ')}>
+      <div className={[styles.topBar, "d-block d-lg-none p-5"].join(" ")}>
         <div className={styles.topBarResponsive}>
           <Hamburguer />
         </div>
@@ -39,31 +38,21 @@ const Home: NextPage = () => {
           <Row>
             <Col xl="7">
               <div className={styles.svgContainer}>
-                <SideCircle
-                  className={[
-                    styles.sideLeftSvgContent,
-                    'd-none d-lg-block',
-                  ].join(' ')}
-                />
                 <Circle className={styles.mainSvgContent} />
               </div>
             </Col>
             <Col md="12" xl="4" className="p-5">
-              <h1 className={styles.title}>Find the others.</h1>
+              <h1 className={styles.title}>
+                <div>Find</div>
+                <div className={styles.redColor}>the</div>
+                <div className={styles.grayColor}>others</div>
+              </h1>
               <p className={styles.info}>
-                For every time you say club passwords like “Have a nice day” and
-                “Weather’s awful today, eh?”, you yearn inside to say forbidden
-                things like “Tell me something that makes you cry” or “What do
-                you think deja vu is for?”. Face it, you even want to talk to
-                that girl in the elevator. But what if that girl in the elevator
-                (and the balding man who walks past your cubicle at work) are
-                thinking the same thing?
+                Everyone carries a piece of the puzzle, and nobody comes into
+                your life by mere coincidence.
               </p>
               <p className={styles.info}>
-                Who knows what you might learn from taking a chance on
-                conversation with a stranger? Everyone carries a piece of the
-                puzzle. Nobody comes into your life by mere coincidence. Trust
-                your instincts. Do the unexpected. Find the others…
+                Trust your instincts. Do the unexpected. Find the others.
               </p>
             </Col>
           </Row>
@@ -72,7 +61,7 @@ const Home: NextPage = () => {
         <Footer />
       </main>
     </Div100vh>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
