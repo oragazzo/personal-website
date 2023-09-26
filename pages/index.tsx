@@ -42,11 +42,13 @@ const Home: NextPage = () => {
               </div>
             </Col>
             <Col md="12" xl="4" className="p-5">
-              <h1 className={styles.title}>
-                <div>Find</div>
-                <div className={styles.redColor}>the</div>
-                <div className={styles.grayColor}>others</div>
-              </h1>
+              <span className={styles.title}>
+                <span>
+                  Find
+                  <span className={styles.redColor}>the</span>
+                  <span className={styles.grayColor}>others</span>
+                </span>
+              </span>
               <p className={styles.info}>
                 Everyone carries a piece of the puzzle, and nobody comes into
                 your life by mere coincidence.
