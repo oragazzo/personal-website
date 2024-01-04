@@ -60,7 +60,7 @@ const Home: NextPage = () => {
           </Row>
         </div>
 
-        <Footer />
+        {/* <Footer /> */}
       </main>
     </Div100vh>
   );
