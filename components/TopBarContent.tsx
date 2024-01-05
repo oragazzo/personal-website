@@ -1,21 +1,27 @@
 import React from "react";
-import Link from "next/link";
 import styles from "../styles/TopBar.module.scss";
 
-export default function TopBar() {
+type Props = {
+  navigation: string;
+  setNavigation: (val: string) => void;
+};
+
+const TopBarContent: React.FC<Props> = ({ navigation, setNavigation }) => {
   return (
     <>
       <div className={styles.topBarContent}>
         <p className={styles.item}>
-          <Link href="/api/hello">About</Link>
+          <button onClick={(e) => setNavigation("about")}>About</button>
         </p>
         <p className={styles.home}>
-          <Link href="/">Home</Link>
+          <button onClick={(e) => setNavigation("home")}>Home</button>
         </p>
         <p className={styles.item}>
-          <Link href="/api/hello">Content</Link>
+          <button onClick={(e) => setNavigation("content")}>Content</button>
         </p>
       </div>
     </>
   );
-}
+};
+
+export default TopBarContent;
