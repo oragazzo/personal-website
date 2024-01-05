@@ -1,9 +1,9 @@
 import React from "react";
 
 import { Col } from "reactstrap";
-import Circle from "../assets/circles/main_circle.svg";
+import Circle from "../../assets/circles/main_circle.svg";
 
-import styles from "../styles/Home.module.scss";
+import styles from "../../styles/Home.module.scss";
 
 export default function LandingPage() {
   return (

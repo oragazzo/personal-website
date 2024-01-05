@@ -7,9 +7,9 @@ import Hamburguer from "../components/Hamburger";
 import TopBarContent from "../components/TopBarContent";
 // import Footer from "../components/Footer";
 
-import LandingPage from "../components/LandingPage";
-import AboutPage from "../components/AboutPage";
-import ContentPage from "../components/ContentPage";
+import LandingPage from "../components/views/LandingPage";
+import AboutPage from "../components/views/AboutPage";
+import ContentPage from "../components/views/ContentPage";
 
 import styles from "../styles/Home.module.scss";
 
