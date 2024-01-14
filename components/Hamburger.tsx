@@ -1,18 +1,23 @@
-import styles from '../styles/Hamburguer.module.scss'
-import React, { useState } from 'react'
+import styles from "../styles/Hamburguer.module.scss";
+import React, { useState } from "react";
 
-import HamburguerIcon from '../assets/icons/HamburguerIcon.svg'
-import TopBarContent from './TopBarContent'
+import HamburguerIcon from "../assets/icons/HamburguerIcon.svg";
+import TopBarContent from "./TopBarContent";
 
-import BehanceIcon from '../assets/social/icon_behance.svg'
-import InstagramIcon from '../assets/social/icon_instagram.svg'
-import RedditIcon from '../assets/social/icon_reddit.svg'
-import TwitterIcon from '../assets/social/icon_twitter.svg'
+import BehanceIcon from "../assets/social/icon_behance.svg";
+import InstagramIcon from "../assets/social/icon_instagram.svg";
+import RedditIcon from "../assets/social/icon_reddit.svg";
+import TwitterIcon from "../assets/social/icon_twitter.svg";
 
-import Link from 'next/link'
+import Link from "next/link";
 
-export default function Hamburguer() {
-  const [open, setOpen] = useState(false)
+type Props = {
+  navigation: string;
+  setNavigation: (val: string) => void;
+};
+
+const Hamburguer: React.FC<Props> = ({ navigation, setNavigation }) => {
+  const [open, setOpen] = useState(false);
 
   return (
     <>
@@ -27,7 +32,10 @@ export default function Hamburguer() {
             X
           </a>
           <nav>
-            <TopBarContent />
+            <TopBarContent
+              navigation={navigation}
+              setNavigation={setNavigation}
+            />
           </nav>
           <div className={styles.social}>
             <Link
@@ -66,5 +74,7 @@ export default function Hamburguer() {
         </div>
       )}
     </>
-  )
-}
+  );
+};
+
+export default Hamburguer;

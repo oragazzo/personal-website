@@ -3,7 +3,7 @@ import React from "react";
 export default function AboutPage() {
   return (
     <>
-      <h1>About Page</h1>
+      <p>I'm building this right now 😀</p>
     </>
   );
 }
