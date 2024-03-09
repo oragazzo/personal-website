@@ -3,15 +3,16 @@ import type { NextPage } from "next";
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 
-import Hamburguer from "../components/Hamburger";
-import TopBarContent from "../components/TopBarContent";
-// import Footer from "../components/Footer";
+import Hamburguer from "@/components/page-components/Hamburger";
+import TopBarContent from "@/components/page-components/TopBarContent";
+// import Footer from "@/components/Footer";
 
-import LandingPage from "../components/views/LandingPage";
-import AboutPage from "../components/views/AboutPage";
-import ContentPage from "../components/views/ContentPage";
+import LandingPage from "@/components/views/LandingPage";
+import AboutPage from "@/components/views/AboutPage";
+import ContentPage from "@/components/views/ContentPage";
+import Circle from "@/components/page-components/Circle";
 
-import styles from "../styles/Home.module.scss";
+import styles from "@/styles/Home.module.scss";
 
 // reactstrap components
 import { Row, Col } from "reactstrap";
@@ -20,18 +21,27 @@ const Home: NextPage = () => {
   const [navigation, setNavigation] = useState("home");
 
   let navigationComponent;
+  let svgPosition;
+
   switch (navigation) {
     case "home":
       navigationComponent = <LandingPage />;
+      svgPosition =
+        "absolute inset-y-0 left-0 flex items-center justify-center";
       break;
     case "about":
       navigationComponent = <AboutPage />;
+      svgPosition =
+        "absolute inset-y-0 right-0 flex items-center justify-center";
       break;
     case "content":
       navigationComponent = <ContentPage />;
+      svgPosition = "hidden";
       break;
     default:
       navigationComponent = <LandingPage />;
+      svgPosition =
+        "absolute inset-y-0 left-0 flex items-center justify-center";
       break;
   }
 
@@ -54,6 +64,10 @@ const Home: NextPage = () => {
       </div>
 
       <main className={styles.main}>
+        <div className={svgPosition}>
+          <Circle />
+        </div>
+
         <div className={styles.container}>
           <Row>{navigationComponent}</Row>
         </div>

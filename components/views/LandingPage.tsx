@@ -1,33 +1,34 @@
 import React from "react";
 
 import { Col } from "reactstrap";
-import Circle from "../../assets/circles/main_circle.svg";
 
-import styles from "../../styles/Home.module.scss";
+import styles from "@/styles/Home.module.scss";
+import Divider from "@/components/page-components/Divider";
 
 export default function LandingPage() {
   return (
     <>
-      <Col xl="7">
-        <div className={styles.svgContainer}>
-          <Circle className={styles.mainSvgContent} />
-        </div>
-      </Col>
-      <Col md="12" xl="4" className="p-5">
-        <span className={styles.title}>
-          <span>
-            <span>Find</span>
-            <span className={styles.redColor}>the</span>
-            <span className={styles.grayColor}>others</span>
+      <Col xl="6"></Col>
+      <Col md="12" xl="6">
+        <div className={styles.contentWrapper}>
+          <span className={styles.title}>
+            <div>
+              <span>Not</span>
+              <span className={styles.redColor}>a</span>
+              <span className={styles.grayColor}>portfolio</span>
+            </div>
           </span>
-        </span>
-        <p className={styles.info}>
-          Everyone carries a piece of the puzzle, and nobody comes into your
-          life by mere coincidence.
-        </p>
-        <p className={styles.info}>
-          Trust your instincts. Do the unexpected. Find the others.
-        </p>
+          <div className={styles.info}>
+            Welcome to <b>@oragazzo's</b> showroom. This is the place where I
+            store my favorite <b>Creations</b> and <b>Artworks</b>. Enjoy!
+          </div>
+          <Divider />
+          <div className={styles.quote}>
+            &#xFF02;Trust your instincts. Do the unexpected. Find the
+            others…&#xFF02; - <br />
+            Timothy Leary
+          </div>
+        </div>
       </Col>
     </>
   );
