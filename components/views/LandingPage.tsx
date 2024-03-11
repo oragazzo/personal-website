@@ -25,8 +25,7 @@ export default function LandingPage() {
           <Divider />
           <div className={styles.quote}>
             &#xFF02;Trust your instincts. Do the unexpected. Find the
-            others…&#xFF02; - <br />
-            Timothy Leary
+            others…&#xFF02; <br />- Timothy Leary
           </div>
         </div>
       </Col>
