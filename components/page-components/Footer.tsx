@@ -9,13 +9,11 @@ import TwitterIcon from "@/assets/social/icon_twitter.svg";
 
 import Link from "next/link";
 
-import { Row, Col } from "reactstrap";
-
 export default function Footer() {
   return (
     <div className={[styles.footerWrapper, "d-none d-lg-flex"].join(" ")}>
       <div className={[styles.socialContainer].join(" ")}>
-        <Col className={styles.socialGroup}>
+        <div className={styles.socialGroup}>
           <Link
             className={styles.socialMedia}
             href="https://www.instagram.com/oragazzo"
@@ -34,9 +32,9 @@ export default function Footer() {
             <TwitterIcon className={styles.socialBadge} />
             <p className={styles.socialText}>@sRagazz0</p>
           </Link>
-        </Col>
+        </div>
 
-        <Col className={styles.socialGroup}>
+        <div className={styles.socialGroup}>
           <Link
             className={styles.socialMedia}
             href="https://www.reddit.com/user/xRagazz0"
@@ -55,7 +53,7 @@ export default function Footer() {
             <BehanceIcon className={styles.socialBadge} />
             <p className={styles.socialText}>/oragazzo</p>
           </Link>
-        </Col>
+        </div>
       </div>
     </div>
   );
