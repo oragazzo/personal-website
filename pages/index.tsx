@@ -64,12 +64,14 @@ const Home: NextPage = () => {
       </div>
 
       <main className={styles.main}>
-        <div className={svgPosition}>
+        <div className={[svgPosition].join(" ")}>
           <Circle />
         </div>
 
         <div className={styles.container}>
-          <div className="grid grid-cols-2">{navigationComponent}</div>
+          <div className="grid lg:grid-cols-2 sm:grid-cols-12">
+            {navigationComponent}
+          </div>
         </div>
 
         {/* <Footer /> */}
