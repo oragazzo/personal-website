@@ -15,7 +15,7 @@
 
     margin: 3vh 0;
 
-    & .home {
+    & .selected {
         font-size: clamp(20px, 4vw, 1.2vw);
         margin: 0 5vw;
     }
@@ -29,6 +29,22 @@
         text-decoration: none;
         color: #ffffff;
     }
+}
+
+.topBarMarker {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    // Add color
+    background-color: #fff;
+
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
 }
 
 @media screen and (max-width: 720px) {
