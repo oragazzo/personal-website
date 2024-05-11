@@ -17,22 +17,23 @@ const TopBarContent: React.FC<Props> = ({ navigation, setNavigation }) => {
   useEffect(() => {
     switch (navigation) {
       case "about":
-        setXPos(
-          (aboutRef.current?.offsetLeft || 0) +
-            (aboutRef.current?.offsetWidth / 2 || 0)
-        );
+        if (aboutRef.current) {
+          setXPos(
+            aboutRef.current.offsetLeft + aboutRef.current.offsetWidth / 2
+          );
+        }
         break;
       case "home":
-        setXPos(
-          (homeRef.current?.offsetLeft || 0) +
-            (homeRef.current?.offsetWidth / 2 || 0)
-        );
+        if (homeRef.current) {
+          setXPos(homeRef.current.offsetLeft + homeRef.current.offsetWidth / 2);
+        }
         break;
       case "content":
-        setXPos(
-          (contentRef.current?.offsetLeft || 0) +
-            (contentRef.current?.offsetWidth / 2 || 0)
-        );
+        if (contentRef.current) {
+          setXPos(
+            contentRef.current.offsetLeft + contentRef.current.offsetWidth / 2
+          );
+        }
         break;
       default:
         break;
