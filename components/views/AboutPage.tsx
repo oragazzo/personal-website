@@ -15,15 +15,15 @@ export default function AboutPage() {
           </div>
         </span>
         <div className={styles.info}>
-          Professionally, I'm a Tech Leader, Software Engineer, Game Dev, and an
-          always learner, who goes berserk (in a good way!) to solve any kind of
+          Professionally, I'm an DevOps Tech Lead, Software Engineer, Game
+          Developer, and an always learner, who loves facing any sort of
           challenges.
         </div>
 
         <div className={styles.info}>
-          Personally, I'm a full time creative nerd who enjoys music, live
-          shows, landscapes, traveling, writing, working out, bad jokes and
-          beer. Oh, and video games too.
+          Personally, I'm a full time creative nerd who enjoys writing fantasy
+          stories, listening to music, watching landscapes, working out, bad
+          jokes and beer.
         </div>
         <Divider />
         <div className={styles.quote}>
