@@ -6,7 +6,6 @@ type Props = {
 };
 
 const TopBarMarker: React.FC<Props> = ({ xPos }) => {
-  console.log(xPos);
   return (
     <motion.div
       className={styles.topBarMarker}
