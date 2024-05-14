@@ -43,17 +43,17 @@ const TopBarContent: React.FC<Props> = ({ navigation, setNavigation }) => {
   return (
     <>
       <div className={styles.topBarContent}>
-        <p className={navigation === "about" ? styles.selected : styles.item}>
+        <p className={styles.selected}>
           <button ref={aboutRef} onClick={(e) => setNavigation("about")}>
             About
           </button>
         </p>
-        <p className={navigation === "home" ? styles.selected : styles.item}>
+        <p className={styles.selected}>
           <button ref={homeRef} onClick={(e) => setNavigation("home")}>
             Home
           </button>
         </p>
-        <p className={navigation === "content" ? styles.selected : styles.item}>
+        <p className={styles.selected}>
           <button ref={contentRef} onClick={(e) => setNavigation("content")}>
             Art
           </button>
