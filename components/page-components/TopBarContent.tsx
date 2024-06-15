@@ -43,21 +43,25 @@ const TopBarContent: React.FC<Props> = ({ navigation, setNavigation }) => {
   return (
     <>
       <div className={styles.topBarContent}>
-        <p className={styles.selected}>
-          <button ref={aboutRef} onClick={(e) => setNavigation("about")}>
-            About
-          </button>
-        </p>
-        <p className={styles.selected}>
-          <button ref={homeRef} onClick={(e) => setNavigation("home")}>
-            Home
-          </button>
-        </p>
-        <p className={styles.selected}>
-          <button ref={contentRef} onClick={(e) => setNavigation("content")}>
-            Art
-          </button>
-        </p>
+        <div className="flex">
+          <p className="text-2xl/8 ml-5">
+            <button ref={homeRef} onClick={(e) => setNavigation("home")}>
+              Home
+            </button>
+          </p>
+          <p className="text-xl/9 mx-5">
+            <button ref={aboutRef} onClick={(e) => setNavigation("about")}>
+              About
+            </button>
+          </p>
+        </div>
+        <div className="flex">
+          <p className="text-xl/9 mx-5">
+            <button ref={contentRef} onClick={(e) => setNavigation("content")}>
+              Art
+            </button>
+          </p>
+        </div>
 
         <TopBarMarker xPos={xPos} />
       </div>
