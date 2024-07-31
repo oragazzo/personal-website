@@ -22,8 +22,8 @@ export default function AboutPage() {
 
         <div className={styles.info}>
           Personally, I'm a full time creative nerd who enjoys writing fantasy
-          stories, listening to music, watching landscapes, working out, bad
-          jokes and beer.
+          stories, creating voxel art, listening to music, watching landscapes,
+          working out, bad jokes, beer and of course, a lot of coffee!
         </div>
         <Divider />
         <div className={styles.quote}>
