@@ -14,6 +14,8 @@ import Circle from "@/components/page-components/Circle";
 
 import styles from "@/styles/Home.module.scss";
 
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 const Home: NextPage = () => {
   const [navigation, setNavigation] = useState("home");
 
@@ -44,6 +46,7 @@ const Home: NextPage = () => {
 
   return (
     <div className="h-dvh">
+      <SpeedInsights />
       <Head>
         <title>Not a portfolio.</title>
         <meta
