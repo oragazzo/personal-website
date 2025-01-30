@@ -26,12 +26,12 @@ const Home: NextPage = () => {
     case "home":
       navigationComponent = <LandingPage />;
       svgPosition =
-        "absolute inset-y-0 left-0 flex items-center justify-center";
+        "absolute left-[5%] top-1/2 -translate-y-1/2 lg:block sm:hidden xs:hidden";
       break;
     case "about":
       navigationComponent = <AboutPage />;
       svgPosition =
-        "absolute inset-y-0 right-0 flex items-center justify-center";
+        "absolute right-[5%] top-1/2 -translate-y-1/2 lg:block sm:hidden xs:hidden";
       break;
     case "content":
       navigationComponent = <ContentPage />;
@@ -40,12 +40,12 @@ const Home: NextPage = () => {
     default:
       navigationComponent = <LandingPage />;
       svgPosition =
-        "absolute inset-y-0 left-0 flex items-center justify-center";
+        "absolute left-[5%] top-1/2 -translate-y-1/2 lg:block sm:hidden xs:hidden";
       break;
   }
 
   return (
-    <div className="h-dvh">
+    <div className="h-dvh relative">
       <SpeedInsights />
       <Head>
         <title>Not a portfolio.</title>
@@ -67,12 +67,12 @@ const Home: NextPage = () => {
       </div>
 
       <main className={styles.main}>
-        <div className={[svgPosition].join(" ")}>
+        <div className={svgPosition}>
           <Circle />
         </div>
 
-        <div className={styles.container}>
-          <div className="grid lg:grid-cols-2 sm:grid-cols-12">
+        <div className={[styles.container, "relative z-10 w-full"].join(" ")}>
+          <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 w-full">
             {navigationComponent}
           </div>
         </div>

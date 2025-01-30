@@ -6,8 +6,8 @@ import Divider from "@/components/page-components/Divider";
 export default function LandingPage() {
   return (
     <>
-      <div></div>
-      <div className={styles.contentWrapper}>
+      <div className="lg:block hidden"></div>
+      <div className={[styles.contentWrapper, "lg:pr-12 px-6"].join(" ")}>
         <span className={styles.title}>
           <div>
             <span>Not</span>

@@ -6,7 +6,7 @@ import Divider from "@/components/page-components/Divider";
 export default function AboutPage() {
   return (
     <>
-      <div className={styles.contentWrapper}>
+      <div className={[styles.contentWrapper, "lg:pl-12 px-6"].join(" ")}>
         <span className={styles.title}>
           <div>
             <span>Who</span>
@@ -34,7 +34,7 @@ export default function AboutPage() {
           Ultrakill
         </div>
       </div>
-      <div></div>
+      <div className="lg:block hidden"></div>
     </>
   );
 }
