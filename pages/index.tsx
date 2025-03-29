@@ -14,6 +14,7 @@ import Circle from "@/components/ui/Circle";
 import styles from "@/styles/Home.module.scss";
 
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react"
 
 const Home: NextPage = () => {
   const [navigation, setNavigation] = useState("home");
@@ -43,6 +44,7 @@ const Home: NextPage = () => {
   return (
     <div className="h-dvh relative font-sans text-font">
       <SpeedInsights />
+      <Analytics />
       <Head>
         <title>Not a portfolio.</title>
         <meta

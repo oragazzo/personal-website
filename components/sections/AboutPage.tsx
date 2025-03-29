@@ -15,10 +15,10 @@ export default function AboutPage() {
           </div>
         </span>
         <div className={styles.info}>
-        I'm a <b>software engineer</b> and <b>game developer</b> who loves solving challenges and building cool things. I work with automation, containerization, microservices, and backend development using Go and Django.
+        I&apos;m a <b>software engineer</b> and <b>game developer</b> who loves solving challenges and building cool things. I work with automation, containerization, microservices, and backend development using Go and Django.
         </div>
         <div className={styles.info}>
-        Outside of tech, I'm a full-time creative nerd who enjoys writing fantasy stories, motorcycles, music, and epic landscapes. I live for workouts, bad jokes, good beer, and an endless supply of coffee!
+        Outside of tech, I&apos;m a full-time creative nerd who enjoys writing fantasy stories, motorcycles, music, and epic landscapes. I live for workouts, bad jokes, good beer, and an endless supply of coffee!
         </div>
         <Divider />
         <div className={styles.quote}>
