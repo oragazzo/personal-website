@@ -121,7 +121,7 @@ export default function GitHubRepos() {
                   </Button>
                 </div>
 
-                <p className="text-gray-400 mb-4">
+                <p className="text-gray-400 mb-4 h-[48px] max-h-[48px] overflow-hidden">
                   {repo.description || "No description provided"}
                 </p>
 
