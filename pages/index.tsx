@@ -51,7 +51,11 @@ const Home: NextPage = () => {
           name="description"
           content="Otavio Ragazzo's personal portfolio."
         />
-        <link rel="icon" href="/eye.ico" />
+        <link rel="icon" href="/dragon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
       </Head>
 
       <div className="inline-block w-full z-10 sm:block">
