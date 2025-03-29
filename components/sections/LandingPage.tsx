@@ -16,8 +16,7 @@ export default function LandingPage() {
           </div>
         </span>
         <div className={styles.info}>
-          Welcome to <b>@oragazzo's</b> showroom. This is the place where I
-          store my favorite <b>Creations</b> and <b>Artworks</b>. Enjoy!
+          Welcome to the <b>@oragazzo</b> showroom. This is the place where I keep my favourite <b>creations</b> and <b>artworks</b>. Enjoy it!
         </div>
         <Divider />
         <div className={styles.quote}>

@@ -52,11 +52,11 @@ const Home: NextPage = () => {
         <link rel="icon" href="/eye.ico" />
       </Head>
 
-      <div className="absolute w-full z-10 sm:block">
+      <div className="inline-block w-full z-10 sm:block">
         <TopBarContent navigation={navigation} setNavigation={setNavigation} />
       </div>
 
-      <main className={[styles.main, "min-h-screen p-0 flex flex-col justify-center items-center flex-1"].join(" ")}>
+      <main className={[styles.main, "min-h-screen p-0 flex flex-col md:justify-center items-center flex-1"].join(" ")}>
         <div className={svgPosition}>
           <Circle />
         </div>

@@ -15,15 +15,10 @@ export default function AboutPage() {
           </div>
         </span>
         <div className={styles.info}>
-          Professionally, I'm an DevOps Tech Lead, Software Engineer, Game
-          Developer, and an always learner, who loves facing any sort of
-          challenges.
+        I'm a <b>software engineer</b> and <b>game developer</b> who loves solving challenges and building cool things. I work with automation, containerization, microservices, and backend development using Go and Django.
         </div>
-
         <div className={styles.info}>
-          Personally, I'm a full time creative nerd who enjoys writing fantasy
-          stories, creating voxel art, listening to music, watching landscapes,
-          working out, bad jokes, beer and of course, a lot of coffee!
+        Outside of tech, I'm a full-time creative nerd who enjoys writing fantasy stories, motorcycles, music, and epic landscapes. I live for workouts, bad jokes, good beer, and an endless supply of coffee!
         </div>
         <Divider />
         <div className={styles.quote}>
