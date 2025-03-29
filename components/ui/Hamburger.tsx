@@ -1,13 +1,13 @@
-import styles from "../../styles/Hamburguer.module.scss";
+import styles from "@/styles/Hamburguer.module.scss";
 import React, { useState } from "react";
 
-import HamburguerIcon from "../../assets/icons/HamburguerIcon.svg";
-import TopBarContent from "../layout/TopBarContent";
+import HamburguerIcon from "@/assets/icons/HamburguerIcon.svg";
+import TopBarContent from "@/components/layout/TopBarContent";
 
-import BehanceIcon from "../../assets/social/icon_behance.svg";
-import InstagramIcon from "../../assets/social/icon_instagram.svg";
-import RedditIcon from "../../assets/social/icon_reddit.svg";
-import TwitterIcon from "../../assets/social/icon_twitter.svg";
+import BehanceIcon from "@/assets/social/icon_behance.svg";
+import InstagramIcon from "@/assets/social/icon_instagram.svg";
+import RedditIcon from "@/assets/social/icon_reddit.svg";
+import TwitterIcon from "@/assets/social/icon_twitter.svg";
 
 import Link from "next/link";
 

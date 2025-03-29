@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
-import styles from "../../styles/TopBar.module.scss";
+import styles from "@/styles/TopBar.module.scss";
 
-import TopBarMarker from "./TopBarMarker";
+import TopBarMarker from "@/components/layout/TopBarMarker";
 
 type Props = {
   navigation: string;
