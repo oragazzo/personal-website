@@ -64,7 +64,12 @@ const Home: NextPage = () => {
         </div>
 
         <div className="relative z-10 w-full">
-          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 w-full">
+          <div
+            className={`grid grid-cols-1 md:grid-cols-1 ${
+              navigation === "content"
+                ? "lg:grid-cols-1"
+                : "lg:grid-cols-2"
+            } w-full`}>
             {navigationComponent}
           </div>
         </div>

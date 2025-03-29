@@ -6,7 +6,7 @@ import Divider from "@/components/ui/Divider";
 export default function AboutPage() {
   return (
     <>
-      <div className={[styles.contentWrapper, "lg:pl-12 px-6"].join(" ")}>
+      <div className="lg:pl-12 px-6">
         <span className={styles.title}>
           <div>
             <span>Who</span>

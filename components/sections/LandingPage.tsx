@@ -7,7 +7,7 @@ export default function LandingPage() {
   return (
     <>
       <div className="lg:block hidden"></div>
-      <div className={[styles.contentWrapper, "lg:pr-12 px-6"].join(" ")}>
+      <div className="lg:pr-12 px-6">
         <span className={styles.title}>
           <div>
             <span>Not</span>
@@ -16,7 +16,7 @@ export default function LandingPage() {
           </div>
         </span>
         <div className={styles.info}>
-          Welcome to the <b>@oragazzo</b> showroom. This is the place where I keep my favourite <b>creations</b> and <b>artworks</b>. Enjoy it!
+          Welcome to the <b>@oragazzo</b> showroom. This is the place where I keep my favourite <b>creations</b>. Enjoy it!
         </div>
         <Divider />
         <div className={styles.quote}>

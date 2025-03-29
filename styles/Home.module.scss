@@ -6,9 +6,9 @@
   & .title {
     font-family: $font-family;
     font-weight: 700;
-    font-size: clamp(45px, 4vw, 7vw);
+    font-size: clamp(40px, 4vw, 7vw);
     /* or 88% */
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 
     display: flex;
 
@@ -46,4 +46,9 @@
     letter-spacing: 0.65px;
     word-wrap: break-word;
   }
+
+  & .quoteCenter {
+    text-align: center;
+  }
+
 }

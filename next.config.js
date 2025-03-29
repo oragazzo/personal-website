@@ -4,6 +4,7 @@ const path = require('path')
 
 const nextConfig = {
   reactStrictMode: true,
+  devIndicators: false,
   allowedDevOrigins: ['local-origin.dev', 'localhost'],
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],

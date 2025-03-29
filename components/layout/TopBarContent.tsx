@@ -58,7 +58,7 @@ const TopBarContent: React.FC<Props> = ({ navigation, setNavigation }) => {
           </p>
           <p className="text-xl/9 mx-5">
             <button ref={contentRef} onClick={(e) => setNavigation("content")}>
-              Art
+              Projects
             </button>
           </p>
         </div>
