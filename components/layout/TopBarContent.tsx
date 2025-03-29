@@ -49,13 +49,13 @@ const TopBarContent: React.FC<Props> = ({ navigation, setNavigation }) => {
               Home
             </button>
           </p>
+        </div>
+        <div className="flex">
           <p className="text-xl/9 mx-5">
             <button ref={aboutRef} onClick={(e) => setNavigation("about")}>
               About
             </button>
           </p>
-        </div>
-        <div className="flex">
           <p className="text-xl/9 mx-5">
             <button ref={contentRef} onClick={(e) => setNavigation("content")}>
               Art

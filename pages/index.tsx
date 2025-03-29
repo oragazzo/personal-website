@@ -3,7 +3,6 @@ import type { NextPage } from "next";
 import React, { useState } from "react";
 import Head from "next/head";
 
-import Hamburguer from "@/components/ui/Hamburger";
 import TopBarContent from "@/components/layout/TopBarContent";
 // import Footer from "@/components/Footer";
 
@@ -53,14 +52,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/eye.ico" />
       </Head>
 
-      <div className="absolute w-full z-10 hidden lg:block">
+      <div className="absolute w-full z-10 sm:block">
         <TopBarContent navigation={navigation} setNavigation={setNavigation} />
-      </div>
-
-      <div className="absolute w-full z-10 p-5 lg:hidden">
-        <div className="flex justify-end">
-          <Hamburguer navigation={navigation} setNavigation={setNavigation} />
-        </div>
       </div>
 
       <main className={[styles.main, "min-h-screen p-0 flex flex-col justify-center items-center flex-1"].join(" ")}>
