@@ -1,7 +1,7 @@
 import React from "react";
 
 import styles from "@/styles/Home.module.scss";
-import Divider from "@/components/page-components/Divider";
+import Divider from "@/components/ui/Divider";
 
 export default function LandingPage() {
   return (

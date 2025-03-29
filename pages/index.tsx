@@ -3,14 +3,14 @@ import type { NextPage } from "next";
 import React, { useState } from "react";
 import Head from "next/head";
 
-import Hamburguer from "@/components/page-components/Hamburger";
-import TopBarContent from "@/components/page-components/TopBarContent";
+import Hamburguer from "@/components/ui/Hamburger";
+import TopBarContent from "@/components/layout/TopBarContent";
 // import Footer from "@/components/Footer";
 
-import LandingPage from "@/components/views/LandingPage";
-import AboutPage from "@/components/views/AboutPage";
-import ContentPage from "@/components/views/ContentPage";
-import Circle from "@/components/page-components/Circle";
+import LandingPage from "@/components/sections/LandingPage";
+import AboutPage from "@/components/sections/AboutPage";
+import ContentPage from "@/components/sections/ContentPage";
+import Circle from "@/components/ui/Circle";
 
 import styles from "@/styles/Home.module.scss";
 
@@ -25,13 +25,11 @@ const Home: NextPage = () => {
   switch (navigation) {
     case "home":
       navigationComponent = <LandingPage />;
-      svgPosition =
-        "absolute left-[5%] top-1/2 -translate-y-1/2 lg:block sm:hidden xs:hidden";
+      svgPosition = "absolute left-[5%] top-1/2 -translate-y-1/2 lg:block hidden";
       break;
     case "about":
       navigationComponent = <AboutPage />;
-      svgPosition =
-        "absolute right-[5%] top-1/2 -translate-y-1/2 lg:block sm:hidden xs:hidden";
+      svgPosition = "absolute right-[5%] top-1/2 -translate-y-1/2 lg:block hidden";
       break;
     case "content":
       navigationComponent = <ContentPage />;
@@ -39,13 +37,12 @@ const Home: NextPage = () => {
       break;
     default:
       navigationComponent = <LandingPage />;
-      svgPosition =
-        "absolute left-[5%] top-1/2 -translate-y-1/2 lg:block sm:hidden xs:hidden";
+      svgPosition = "absolute left-[5%] top-1/2 -translate-y-1/2 lg:block hidden";
       break;
   }
 
   return (
-    <div className="h-dvh relative">
+    <div className="h-dvh relative font-sans text-font">
       <SpeedInsights />
       <Head>
         <title>Not a portfolio.</title>
@@ -56,23 +53,23 @@ const Home: NextPage = () => {
         <link rel="icon" href="/eye.ico" />
       </Head>
 
-      <div className={[styles.topBar, "d-none d-lg-block"].join(" ")}>
+      <div className="absolute w-full z-10 hidden lg:block">
         <TopBarContent navigation={navigation} setNavigation={setNavigation} />
       </div>
 
-      <div className={[styles.topBar, "d-block d-lg-none p-5"].join(" ")}>
-        <div className={styles.topBarResponsive}>
+      <div className="absolute w-full z-10 p-5 lg:hidden">
+        <div className="flex justify-end">
           <Hamburguer navigation={navigation} setNavigation={setNavigation} />
         </div>
       </div>
 
-      <main className={styles.main}>
+      <main className={[styles.main, "min-h-screen p-0 flex flex-col justify-center items-center flex-1"].join(" ")}>
         <div className={svgPosition}>
           <Circle />
         </div>
 
-        <div className={[styles.container, "relative z-10 w-full"].join(" ")}>
-          <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 w-full">
+        <div className="relative z-10 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 w-full">
             {navigationComponent}
           </div>
         </div>

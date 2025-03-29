@@ -1,36 +1,7 @@
 @import "variables.module.scss";
 
-.topBarResponsive {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.topBar {
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-}
-
 .main {
   min-height: 100vh;
-  padding: 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  font-family: $font-family;
-  color: $font-color;
-
-  & .container {
-    width: 100%;
-  }
-
-  & .contentWrapper {
-    align-items: center;
-    margin: auto 100px;
-  }
 
   & .title {
     font-family: $font-family;
